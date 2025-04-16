@@ -33,8 +33,6 @@ import {
 export default function SalesPage() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [question, setQuestion] = useState("");
-  const [answer, setAnswer] = useState("");
 
   const [sorting, setSorting] = useState([]);
   const [columnFilters, setColumnFilters] = useState([]);
