@@ -5,6 +5,14 @@ import json
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # Load dummy data
 with open("dummyData.json", "r") as f:
     DUMMY_DATA = json.load(f)
@@ -29,5 +37,5 @@ async def ai_endpoint(request: Request):
     # Replace with real AI logic as desired (e.g., call to an LLM).
     return {"answer": f"This is a placeholder answer to your question: {user_question}"}
 
-if __name__ == "__main__":
+if "_name_" == "_main_":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
