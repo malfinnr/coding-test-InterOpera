@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend
 
-## Getting Started
+This project is built with Next.js 15+, Tailwind CSS 4, and shadcn/ui.
 
-First, run the development server:
+### Requirements
 
-```bash
+- Node.js 20+ and npm / yarn
+
+### Getting started
+
+Run the following command on your local environment:
+
+```shell
+git clone <github-url>
+cd my-project-name
+
+npm install
+# or
+yarn install
+```
+
+Then, you can run the project locally in development mode with live reload by executing:
+
+```shell
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to see your project.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```shell
+.
+├── README.md                       # README file
+├── public                          # Public assets folder
+└── src
+    ├── app                         # Next JS App (App Router)
+    ├── components                  # React components
+    │   └── ui                      # UI components
+    └── features                    # Components and actions specific to a feature
+    └── libs                        # 3rd party libraries configuration
+    ├── locales                     # Locales folder (i18n messages)
+    ├── styles                      # Styles folder
+    └── layouts                     # Layout folder
+```
 
-## Learn More
+### Deploy to production
 
-To learn more about Next.js, take a look at the following resources:
+You can generate a production build with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```shell
+$ npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+It generates an optimized production build. To test the generated build, run:
 
-## Deploy on Vercel
+```shell
+$ npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This command starts a local server using the production build. You can now open http://localhost:3000 in your preferred browser to see the result.

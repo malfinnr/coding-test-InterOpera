@@ -1,0 +1,30 @@
+[
+  {
+    "question": "How are sales this month?",
+    "answer": "Sales this month have increased by 12% compared to last month."
+  },
+  {
+    "question": "What is the team performance like?",
+    "answer": "The team performance is stable and showing consistent improvement."
+  },
+  {
+    "question": "Who is the best performer?",
+    "answer": "Currently, Jane Doe is the top performer based on sales numbers."
+  },
+  {
+    "question": "Tell me about revenue",
+    "answer": "The revenue has grown steadily, reaching $500K this quarter."
+  },
+  {
+    "question": "How’s our Q1 performance?",
+    "answer": "Q1 performance exceeded expectations with a 15% year-over-year growth."
+  },
+  {
+    "question": "Give me the top 3 sales reps",
+    "answer": "The top 3 sales reps are Jane Doe, John Smith, and Alice Lee."
+  },
+  {
+    "question": "Any issues in the sales process?",
+    "answer": "There were minor delays in client onboarding, but the process has improved."
+  }
+]
